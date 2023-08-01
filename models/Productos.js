@@ -7,7 +7,7 @@ const ProductosSchema = mongoose.Schema({
     precio:{type: Number, required:true, trim: true},
     imagen: {type: String, required:true, trim: true }, //trim es para borrar espacios
     creado: {type: Date, default:Date.now()},
-    categoiraId:{type:mongoose.Schema.Types.ObjectId, ref:"Categorias"},
+    categoriaId:{type:mongoose.Schema.Types.ObjectId, ref:"Categorias"},
 
 });
 
