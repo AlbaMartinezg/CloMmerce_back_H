@@ -72,7 +72,7 @@ exports.actualizarCategoria = async ( req, res) => {
 exports.borrarCategoria = async ( req, res) => {
     try{
         await Categorias.deleteOne({ _id: req.params.id});
-        res.json({ msg: "categoria eliminada"});
+        res.json({ msg: "Categoria eliminada"});
     }catch(error){
         console.log(error);
     }
